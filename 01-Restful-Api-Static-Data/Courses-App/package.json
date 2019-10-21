@@ -1,0 +1,16 @@
+{
+  "name": "restful-api",
+  "version": "1.0.0",
+  "description": "Build RESTful APIs with Node and Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Aadarshx",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^16.1.7",
+    "express": "^4.17.1"
+  }
+}

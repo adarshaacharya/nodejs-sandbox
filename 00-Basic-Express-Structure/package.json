@@ -1,0 +1,16 @@
+{
+  "name": "website-page-routing",
+  "version": "1.0.0",
+  "description": "Basic format for website and routes",
+  "main": "app.js",
+  "scripts": {
+   "start" : "node src/app.js",
+   "dev" : "nodemon src/app.js"
+  },
+  "author": "Aadarsha acharya",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}

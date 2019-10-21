@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> <%= title %> </title>
+    <style>
+    div {
+        margin : 25px;
+    }
+    </style>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs')%>
+
+    <form action="/about" method="post">
+        <div>
+            <label>Full Name : </label>
+            <input type="text" name="name" placeholder="Name.." required>
+        </div>
+
+        <div>
+            <label>Email : </label>
+            <input type="email" name="email" placeholder="Email.." required>
+        </div>
+
+        <div>
+            <label>Subject : </label>
+            <input type="text" name="subject" placeholder="Subject.." required>
+        </div>
+        <div>
+            <label>Message : </label>
+            <textarea type="text" name="message" required> </textarea>
+        </div>
+
+        <div>
+                <button type="submit">Send</button>
+            </div>
+     
+    </form>
+
+
+    <%- include('./partials/footer.ejs')%>
+
+
+</body>
+
+</html>

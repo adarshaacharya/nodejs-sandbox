@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey" : "vidlySecretKey" // use set vidlySecretKey=eutasecretkey in windows
+                                     // use export vidlySecretKey=eutasecretkey.. in Linux/Mac
+}
