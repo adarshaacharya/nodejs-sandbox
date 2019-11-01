@@ -13,9 +13,10 @@ app.use(express.urlencoded({extended : true}));
 const viewsDirectoryPath = path.join(__dirname, '../views')
 const publicDirectoryPath = path.join(__dirname,'../public')
 
+
 // Setup views and public directory
 app.set('views', viewsDirectoryPath)
-app.set(express.static(publicDirectoryPath))
+app.use(express.static(publicDirectoryPath))
 
 // Setup EJS engine
 app.set('view engine', 'ejs')
@@ -32,7 +33,7 @@ app.use(logger)
 
 
 const hostname = 'localhost'
-const port = 5000 || process.env.PORT
+const port = 9000 || process.env.PORT
 
 app.listen(port, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
