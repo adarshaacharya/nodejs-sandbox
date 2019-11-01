@@ -1,0 +1,19 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="login-form">
+  <h1>Login Form</h1>
+  <form action="/users/login" method="POST">
+ 
+    <input type="email" id="email" placeholder="Email" name="email" required />
+    <input type="password" name="password" placeholder="Password" required />
+
+    <button type="submit">Login</button>
+  </form>
+  <br>
+  No Account? <a href="/users/register">Register</a>
+
+  <%- include('./partials/messages.ejs') %>
+
+</div>
+
+<%- include('./partials/footer.ejs')%>

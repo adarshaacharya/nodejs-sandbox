@@ -1,0 +1,31 @@
+
+
+<%- include('./partials/header.ejs') %>
+
+<div class="login-form">
+   
+    <h1 class="text-center mb-3">
+      <i class="fas fa-user-plus"></i> Register Form
+    </h1>
+
+  <form action="/users/register" method="POST">
+    <input type="text" name="name" placeholder="Name"  value="<%= typeof (name) != 'undefined' ? name : '' %>" required />
+
+    <input type="email" placeholder="Email" name="email" value="<%= typeof (email) != 'undefined' ? email : '' %>" required />
+
+
+    <input type="password" name="password" placeholder="Password" value="<%= typeof (password) != 'undefined' ? password : '' %>"  required />
+
+    <button type="submit">Register</button>
+  </form>
+  <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+<br>
+
+
+<%- include('./partials/messages.ejs') %>
+
+
+</div>
+
+<%- include('./partials/footer.ejs')%>
+ 
